@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <!--#region Colors-->
+    <Color x:Key="lightUpperBg">#e3e2de</Color>
+    <Color x:Key="lightLowerBg">#d6d5d2</Color>
+    <Color x:Key="lightButtonBg">#b5b4b1</Color>
+    <Color x:Key="darkUpperBg">#3d3d3b</Color>
+    <Color x:Key="darkLowerBg">#383837</Color>
+    <Color x:Key="darkButtonBg">#212120</Color>
+    <Color x:Key="buttonText1">#d4a115</Color>
+    <Color x:Key="buttonText3">#87670e</Color>
+    <Color x:Key="buttonText2">#db3721</Color>
+    <!--#endregion-->
+
+    <!--#region Styles -->
+    <Style TargetType="Label">
+        <Setter Property="TextColor" Value="{AppThemeBinding Light=Black, Dark=White}"/>
+        <Setter Property="VerticalTextAlignment" Value="Center"/>
+        <Setter Property="HorizontalTextAlignment" Value="End"/>
+    </Style>
+
+    <Style TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource lightButtonBg}, Dark={StaticResource darkButtonBg}}"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="TextColor" Value="{AppThemeBinding Light=Black, Dark=White}"/>
+        <Setter Property="CornerRadius" Value="15"/>
+    </Style>
+    <!--#endregion-->
+</ResourceDictionary>
