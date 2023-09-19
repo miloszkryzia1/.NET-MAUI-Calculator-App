@@ -12,16 +12,17 @@
         <VerticalStackLayout VerticalOptions="CenterAndExpand"
                              HorizontalOptions="EndAndExpand"
                              BackgroundColor="Transparent">
-            <Label Text="0"
+            <Label Text="{Binding Expression}"
                    FontSize="20"/>
-            <Label Text="0"
+            <Label Text="{Binding Result}"
                    FontSize="70"/>
         </VerticalStackLayout>
         <Grid Grid.Row="1"
               RowDefinitions="0.2*,0.2*,0.2*,0.2*,0.2*"
               ColumnDefinitions="0.25*,0.25*,0.25*,0.25*"
               BackgroundColor="{AppThemeBinding Light={StaticResource lightLowerBg}, Dark={StaticResource darkLowerBg}}"
-              Padding="10,10">
+              Padding="10,10"
+              x:Name="buttonGrid">
             <Button Text="AC" Grid.Row="0" Grid.Column="0" 
                     TextColor="{AppThemeBinding Light={StaticResource buttonText3}, Dark={StaticResource buttonText1}}"/>
             <Button Text="BS" Grid.Row="0" Grid.Column="1" 
