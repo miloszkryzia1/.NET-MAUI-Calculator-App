@@ -14,6 +14,7 @@ namespace Calculator
     [AddINotifyPropertyChangedInterface]
     class MainViewModel
     {
+
         private bool computed;
         public string Expression { get; set; }
         public double Result { get; set; }
@@ -24,6 +25,7 @@ namespace Calculator
             Expression e = new Expression(Expression);
             Result = (double)e.calculate();
         }
+
         private void ButtonAction(string symbol)
         {
             if ((symbol.Equals("+") || (symbol.Equals("-") || (symbol.Equals("*") || (symbol.Equals("/"))))))
