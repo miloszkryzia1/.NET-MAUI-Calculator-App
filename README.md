@@ -1,6 +1,18 @@
 # .NET MAUI Calculator App
-This is a basic mobile calculator application created using the .NET MAUI framework.<br>
-It features a full user interface, with support for light and dark modes.
+## Description
+This is a basic multiplatform calculator application created using the .NET MAUI framework.<br>
+It features a full user interface, with support for light and dark modes. <br> 
+The calculator supports basic mathematical operations:<br>
+- Addition
+- Subtraction
+- Multiplication
+- Division <br>
 
-To use, clone this repository into Visual Studio 2022 and open the solution. Then build the project on selected device.
-The app can run on Windows, Mac, and iOS, however, it was created and tested on a virtual Android device.
+**Compatibility**: The app can run on different platforms: Android, Windows, Mac, and iOS, however, it was created and tested on a virtual **Android device**.
+
+## Instructions
+- Open Visual Studio 2022
+- From the menu, select *Clone a repository*
+- Paste the link to this repository
+- Open the *.sln* file
+- Select a device to run the application on
